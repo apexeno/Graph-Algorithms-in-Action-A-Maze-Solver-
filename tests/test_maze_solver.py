@@ -44,6 +44,7 @@ class MazeSolverTests(unittest.TestCase):
         solver = MazeSolver(maze)
         result = solver.run_two_phase_pipeline()
 
+        self.assertTrue(result.bfs_exploration.relics_found)
         self.assertEqual(result.bfs_exploration.relics_found[-1], (2, 0))
         self.assertEqual(result.dijkstra_escape.path[0], (2, 0))
         self.assertEqual(result.astar_escape.path[0], (2, 0))
