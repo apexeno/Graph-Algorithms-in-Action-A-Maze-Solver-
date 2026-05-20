@@ -129,7 +129,7 @@ class MazeSolver:
 
         while queue:
             dist, current = heapq.heappop(queue)
-            if dist > distances.get(current, float("inf")):
+            if dist > distances[current]:
                 continue
             if current == goal:
                 break
