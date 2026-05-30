@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -12,7 +14,7 @@ public:
         n++;
     }
 
-    int A[n];
+    std::vector<int> A(n);  
     for (int i = 0; i < n; i++) {
         A[i] = orig % 10;  
         orig /= 10;
