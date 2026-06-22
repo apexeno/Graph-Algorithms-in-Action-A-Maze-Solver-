@@ -9,4 +9,4 @@ Goal: Master the STL containers and core algorithms : sorting, binary search, re
 # Week 3:
 Goal: Master pointer-based linear structures and the hashing trick for O(1) lookups.
 # Week 4:
-Goal: Master the non-linear structures — every traversal cold, BST operations, heap mechanics, and tries.
+Goal: Master the non-linear structures : every traversal cold, BST operations, heap mechanics, and tries.
