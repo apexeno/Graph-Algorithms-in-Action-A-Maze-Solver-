@@ -1,3 +1,7 @@
+// 208. Implement Trie (Prefix Tree)
+// Difficulty: Medium
+// Topic: Trie (Prefix Tree)
+
 class Trie {
     struct TrieNode {
         TrieNode* children[26] = {};
@@ -10,6 +14,21 @@ public:
     Trie() {
         root = new TrieNode();
     }
+
+    ~Trie() {
+        clear(root);
+    }
+
+private:
+    void clear(TrieNode* node) {
+        if (!node) return;
+        for (int i = 0; i < 26; i++) {
+            clear(node->children[i]);
+        }
+        delete node;
+    }
+
+public:
 
     void insert(string word) {
         TrieNode* node = root;
