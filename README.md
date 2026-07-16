@@ -13,7 +13,7 @@ Goal: Master the non-linear structures : every traversal cold, BST operations, h
 # Week 5:
 Goal: Understand graph representations (adjacency list/matrix, implicit grids) and master BFS and DFS traversals.
 # Week 6:
-Goal: Implement weighted shortest-path algorithms — Dijkstra and A* - with priority queues and path reconstruction.
+Goal: Implement weighted shortest-path algorithms - Dijkstra and A* - with priority queues and path reconstruction.
 
 # Capstone Project: Maze Solver
 
