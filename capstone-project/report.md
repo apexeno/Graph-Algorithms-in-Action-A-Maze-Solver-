@@ -1,4 +1,4 @@
-# Capstone Project Report — Maze Solver
+# Capstone Project Report : Maze Solver
 
 ## Algorithm Roles
 
@@ -24,7 +24,7 @@ A* consistently expands fewer cells than Dijkstra across all tests. The advantag
 
 Both algorithms produce identical distance matrices, confirming the heuristic is admissible and consistent.
 
-## Best Coin Order — Medium Maze (5 coins)
+## Best Coin Order : Medium Maze (5 coins)
 
 **Uniform (BFS):** S → c(3,0) → c(7,0) → c(0,7) → c(3,9) → c(7,9) → G — Total steps: 32
 **Weighted (Dijkstra):** S → c(3,0) → c(7,0) → c(0,7) → c(3,9) → c(7,9) → G — Total cost: 32
@@ -35,4 +35,4 @@ Since the medium maze has no digit-terrain cells (only `.` and `#`), both runs p
 
 - **Sanity checks pass on all tests:** `dist[i][j] == dist[j][i]`, `dist[i][i] == 0`, `dijkDist >= bfsDist` cell-by-cell, `astarDist == dijkDist` cell-by-cell.
 - **Weighted maze (Test 3)** is where BFS and Dijkstra diverge: BFS finds 22 steps (uniform), Dijkstra finds cost 24 (respecting the `9`-cost cells by routing around them).
-- **Stress test** completes in ~0.05s with pruning — well under the 2-second limit.
+- **Stress test** completes in ~0.05s with pruning : well under the 2-second limit.
