@@ -13,7 +13,7 @@ Goal: Master the non-linear structures : every traversal cold, BST operations, h
 # Week 5:
 Goal: Understand graph representations (adjacency list/matrix, implicit grids) and master BFS and DFS traversals.
 # Week 6:
-Goal: Implement weighted shortest-path algorithms - Dijkstra and A* - with priority queues and path reconstruction.
+Goal: Implement weighted shortest-path algorithms — Dijkstra and A* - with priority queues and path reconstruction.
 
 # Capstone Project: Maze Solver
 
@@ -21,12 +21,22 @@ A single C++ program that reads a maze containing coins, plans the shortest tota
 
 ## Compile & Run
 
+**Linux / macOS (Bash)**
 ```bash
 g++ -O2 capstone-project/maze_solver.cpp -o maze_solver
 ./maze_solver < capstone-project/test_mazes/tiny_2coins.txt
 ./maze_solver < capstone-project/test_mazes/medium_5coins.txt
 ./maze_solver < capstone-project/test_mazes/weighted_4coins.txt
 ./maze_solver < capstone-project/test_mazes/stress_8coins.txt
+```
+
+**Windows (PowerShell)**
+```powershell
+g++ -O2 capstone-project/maze_solver.cpp -o maze_solver.exe
+Get-Content capstone-project/test_mazes/tiny_2coins.txt | ./maze_solver.exe
+Get-Content capstone-project/test_mazes/medium_5coins.txt | ./maze_solver.exe
+Get-Content capstone-project/test_mazes/weighted_4coins.txt | ./maze_solver.exe
+Get-Content capstone-project/test_mazes/stress_8coins.txt | ./maze_solver.exe
 ```
 
 ## Algorithms Used
@@ -66,5 +76,4 @@ c......*
 
 SUMMARY | BFS pairs computed: 16 | DFS orderings tried: 4 | Dijkstra:318 | A*:206
 ```
-
 
