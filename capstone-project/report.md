@@ -31,7 +31,7 @@ Both algorithms produce identical distance matrices, confirming the heuristic is
 
 Since the medium maze has no digit-terrain cells (only `.` and `#`), both runs produce the same order and cost. DFS pruning reduced the search from 120 possible permutations (5!) down to 26 orderings tried.
 
-## Key Observations
+## RESULTS:
 
 - **Sanity checks pass on all tests:** `dist[i][j] == dist[j][i]`, `dist[i][i] == 0`, `dijkDist >= bfsDist` cell-by-cell, `astarDist == dijkDist` cell-by-cell.
 - **Weighted maze (Test 3)** is where BFS and Dijkstra diverge: BFS finds 22 steps (uniform), Dijkstra finds cost 24 (respecting the `9`-cost cells by routing around them).
